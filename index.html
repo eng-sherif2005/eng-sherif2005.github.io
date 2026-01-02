@@ -9,25 +9,26 @@
         :root { --main-color: #8b5cf6; --bg-dark: #0d1117; }
         body { background-color: var(--bg-dark); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; overflow-x: hidden; }
         
-        /* تأثير الصورة الشخصية */
+        /* تصميم الصورة الشخصية */
         .profile-container { position: relative; padding: 10px; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--main-color); object-fit: cover; box-shadow: 0 0 20px var(--main-color); transition: 0.5s; }
-        .profile-img:hover { transform: scale(1.05) rotate(5deg); }
+        .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 3px solid var(--main-color); object-fit: cover; box-shadow: 0 0 25px rgba(139, 92, 246, 0.4); transition: 0.5s; }
+        .profile-img:hover { transform: scale(1.05); box-shadow: 0 0 35px var(--main-color); }
 
         h1 { font-size: 2.2rem; margin: 15px 0; color: #58a6ff; }
         
         /* تأثير الكتابة الآلية */
-        .typewriter { font-size: 1.2rem; color: #8b949e; border-left: 2px solid var(--main-color); white-space: nowrap; overflow: hidden; width: fit-content; margin: 0 auto; animation: typing 3.5s steps(30, end), blink 0.5s step-end infinite; }
+        .typewriter { font-size: 1.1rem; color: #8b949e; border-left: 2px solid var(--main-color); white-space: nowrap; overflow: hidden; width: fit-content; margin: 0 auto; animation: typing 3s steps(30, end), blink 0.5s step-end infinite; }
         @keyframes typing { from { width: 0 } to { width: 100% } }
         @keyframes blink { from, to { border-color: transparent } 50% { border-color: var(--main-color) } }
 
-        /* أزرار التواصل */
-        .social-links { margin-top: 25px; display: flex; gap: 15px; }
-        .social-icon { color: white; font-size: 24px; text-decoration: none; transition: 0.3s; width: 50px; height: 50px; border: 1px solid #30363d; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #161b22; }
-        .social-icon:hover { background: var(--main-color); transform: translateY(-5px); color: white; }
+        /* أزرار التواصل الاجتماعي */
+        .social-links { margin-top: 30px; display: flex; gap: 20px; }
+        .social-icon { color: white; font-size: 26px; text-decoration: none; transition: 0.3s; width: 55px; height: 55px; border: 1px solid #30363d; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #161b22; }
+        .social-icon:hover { background: var(--main-color); transform: translateY(-7px); border-color: var(--main-color); }
         
         /* زر الواتساب العائم */
-        .wa-float { position: fixed; bottom: 20px; left: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.5); z-index: 100; }
+        .wa-float { position: fixed; bottom: 25px; left: 25px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); z-index: 1000; transition: 0.3s; }
+        .wa-float:hover { transform: scale(1.1); }
     </style>
 </head>
 <body>
@@ -40,9 +41,9 @@
     <div class="typewriter">طالب هندسة برمجيات | مبرمج C++ & Python</div>
 
     <div class="social-links">
-        <a href="https://github.com/eng-sherif2005" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://facebook.com/your-profile" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com/your-profile" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/eng-sherif2005" class="social-icon" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/share/17kmZSixW6/?mibextid=wwXIfr" class="social-icon" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/eng_shef0?igsh=Z2lwZTl6dnRwemhs&utm_source=qr" class="social-icon" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
 
     <a href="https://wa.me/201065110358" class="wa-float" target="_blank">
