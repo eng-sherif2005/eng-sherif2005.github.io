@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من هو الشريف عبد النبي؟</title>
+    <style>
+        body { background-color: #0d1117; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.8; text-align: center; }
+        nav { background: #161b22; padding: 15px; border-bottom: 1px solid #30363d; }
+        nav a { color: #58a6ff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .container { max-width: 800px; margin: 40px auto; padding: 25px; background: #161b22; border-radius: 15px; border: 1px solid #30363d; text-align: right; }
+        h1 { color: #8b5cf6; text-align: center; }
+        h2 { color: #58a6ff; border-right: 4px solid #8b5cf6; padding-right: 10px; margin-top: 30px; }
+        p { font-size: 1.1rem; color: #c9d1d9; }
+        .skill { background: #238636; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; display: inline-block; margin: 5px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من أنا</a>
+    </nav>
+
+    <div class="container">
+        <h1>السيرة الذاتية والشغف</h1>
+        <p>مرحباً بكم! أنا <strong>الشريف عبد النبي</strong>، طالب في كلية هندسة البرمجيات. البرمجة بالنسبة لي ليست مجرد عمل، بل هي وسيلة لتحويل الأفكار المعقدة إلى حلول تقنية تخدم المجتمع.</p>
+
+        <h2>رحلتي التعليمية</h2>
+        <p>بدأت رحلتي بالتعمق في أساسيات علوم الحاسوب، حيث ركزت على فهم لغات البرمجة القوية مثل C++ لبناء تفكير منطقي سليم، ثم انتقلت لتعلم Python لما توفره من إمكانيات هائلة في الذاتية والذكاء الاصطناعي.</p>
+
+        <h2>المهارات البرمجية</h2>
+        <div>
+            <span class="skill">C++ Programming</span>
+            <span class="skill">Python Developer</span>
+            <span class="skill">Web Design (HTML/CSS)</span>
+            <span class="skill">Problem Solving</span>
+        </div>
+
+        <h2>أهدافي المستقبلية</h2>
+        <p>أسعى دائماً لتطوير نفسي ومواكبة كل جديد في عالم التكنولوجيا، وهدفي هو المساهمة في بناء برمجيات عالمية تساعد في تحسين جودة الحياة الرقمية.</p>
+    </div>
+
+</body>
+</html>
+
