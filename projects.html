@@ -3,37 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مشاريعي | الشريف عبد النبي</title>
+    <title>معرض الأعمال | الشريف عبد النبي</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --main-color: #8b5cf6; --bg-dark: #0d1117; }
-        body { background-color: var(--bg-dark); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; text-align: center; }
-        nav { background: #161b22; padding: 15px; display: flex; justify-content: center; gap: 20px; border-bottom: 1px solid #30363d; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
+        :root { --main-color: #8b5cf6; --bg-dark: #0d1117; --card-bg: #161b22; }
+        body { background-color: var(--bg-dark); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        
+        /* شريط التنقل */
+        nav { background: var(--card-bg); padding: 15px; display: flex; justify-content: center; gap: 20px; border-bottom: 1px solid #30363d; sticky; top: 0; }
+        nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
         nav a:hover { color: var(--main-color); }
-        .container { padding: 40px 20px; max-width: 1000px; margin: auto; }
-        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 20px; text-align: right; margin-bottom: 20px; }
-        h3 { color: var(--main-color); margin-top: 0; }
-        p { color: #8b949e; line-height: 1.6; }
+
+        .container { padding: 50px 20px; max-width: 1100px; margin: auto; text-align: center; }
+        h1 { color: #58a6ff; font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { color: #8b949e; margin-bottom: 40px; }
+
+        /* شبكة المشاريع */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        
+        .card { 
+            background: var(--card-bg); 
+            border: 1px solid #30363d; 
+            border-radius: 15px; 
+            padding: 30px; 
+            text-align: right; 
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .card:hover { 
+            transform: translateY(-10px); 
+            border-color: var(--main-color); 
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15); 
+        }
+
+        .card i { font-size: 40px; color: var(--main-color); margin-bottom: 15px; display: block; }
+        .card h3 { color: #58a6ff; margin: 10px 0; font-size: 1.5rem; }
+        .card p { color: #8b949e; line-height: 1.7; font-size: 0.95rem; }
+        
+        /* الأزرار */
+        .btn { 
+            display: inline-block; 
+            margin-top: 20px; 
+            padding: 10px 20px; 
+            background: var(--main-color); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            transition: 0.3s; 
+        }
+        .btn:hover { opacity: 0.8; }
+        .btn-outline { background: transparent; border: 1px solid var(--main-color); color: var(--main-color); margin-right: 10px; }
     </style>
 </head>
 <body>
+
     <nav>
         <a href="index.html">الرئيسية</a>
         <a href="about.html">من أنا</a>
         <a href="projects.html">مشاريعي</a>
     </nav>
+
     <div class="container">
-        <h1>معرض أعمالي البرمجية</h1>
-        <div class="card">
-            <h3>نظام إدارة المستشفيات (C++)</h3>
-            <p>مشروع برمجي متطور لتنظيم بيانات المرضى والمواعيد باستخدام لغة C++.</p>
-        </div>
-        <div class="card">
-            <h3>بوت ذكاء اصطناعي (Python)</h3>
-            <p>تطبيق بلغة Python للرد الآلي وتحليل النصوص البسيطة.</p>
+        <h1>معرض أعمالي التقنية</h1>
+        <p class="subtitle">هنا تجد ثمرة دراستي وتطبيقي في عالم البرمجة</p>
+
+        <div class="projects-grid">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>نظام إدارة البيانات الذكي</h3>
+                <p>مشروع بلغة C++ يعتمد على الخوارزميات المتقدمة لتنظيم وتخزين البيانات وحل المشكلات المنطقية المعقدة.</p>
+                <a href="#" class="btn">عرض الكود</a>
+            </div>
+
+            <div class="card">
+                <i class="fab fa-python"></i>
+                <h3>أتمتة المهام بالبايثون</h3>
+                <p>تطوير سكربتات ذكية قادرة على تنفيذ المهام المتكررة تلقائياً، مما يوفر الوقت والجهد في معالجة البيانات.</p>
+                <a href="#" class="btn">عرض الكود</a>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>موقعي الشخصي المطور</h3>
+                <p>تصميم وتطوير واجهة ويب متكاملة (هذا الموقع) باستخدام أحدث تقنيات التصميم لتعكس هويتي البرمجية.</p>
+                <a href="#" class="btn btn-outline">التفاصيل</a>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
 
