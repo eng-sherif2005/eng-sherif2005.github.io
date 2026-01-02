@@ -8,39 +8,34 @@
     <style>
         :root { --main-color: #8b5cf6; --bg-dark: #0d1117; }
         body { background-color: var(--bg-dark); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; text-align: center; }
-        
-        /* شريط التنقل العلوي */
         nav { background: #161b22; padding: 15px; display: flex; justify-content: center; gap: 20px; border-bottom: 1px solid #30363d; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; padding: 5px 10px; }
-        nav a:hover { color: var(--main-color); background: #21262d; border-radius: 5px; }
-
+        nav a:hover { color: var(--main-color); }
         .container { padding: 40px 20px; max-width: 900px; margin: auto; }
-        .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--main-color); object-fit: cover; }
-        h1 { color: #58a6ff; font-size: 2.5rem; }
-        .hero-text { font-size: 1.3rem; color: #8b949e; line-height: 1.8; margin-bottom: 30px; }
+        .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--main-color); object-fit: cover; box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+        h1 { color: #58a6ff; font-size: 2.5rem; margin: 20px 0; }
+        .hero-text { font-size: 1.2rem; color: #8b949e; line-height: 1.8; margin-bottom: 30px; }
+        .social-links { display: flex; gap: 20px; justify-content: center; margin-top: 20px; }
+        .social-links a { color: white; font-size: 28px; transition: 0.3s; }
+        .social-links a:hover { color: var(--main-color); transform: translateY(-5px); }
     </style>
 </head>
 <body>
-
     <nav>
         <a href="index.html">الرئيسية</a>
         <a href="about.html">من أنا</a>
         <a href="projects.html">مشاريعي</a>
     </nav>
-
     <div class="container">
         <img src="IMG_2171.jpeg" class="profile-img">
         <h1>الشريف عبد النبي</h1>
-        <p class="hero-text">
-            أهلاً بك في عالمي الرقمي. أنا طالب هندسة برمجيات أطمح لترك بصمة في عالم التكنولوجيا. 
-            تخصصت في لغات البرمجة القوية مثل C++ و Python، وأعمل حالياً على تطوير مهاراتي في بناء واجهات الويب الاحترافية.
-        </p>
-        <div style="display:flex; gap:15px; justify-content:center;">
-             <a href="https://github.com/eng-sherif2005" style="color:white; font-size:25px;"><i class="fab fa-github"></i></a>
-             <a href="https://www.facebook.com/share/17kmZSixW6/?mibextid=wwXIfr" style="color:white; font-size:25px;"><i class="fab fa-facebook"></i></a>
+        <p class="hero-text">طالب هندسة برمجيات | مبرمج بلغة C++ و Python شغوف ببناء حلول تقنية مبتكرة.</p>
+        <div class="social-links">
+             <a href="https://github.com/eng-sherif2005"><i class="fab fa-github"></i></a>
+             <a href="https://www.facebook.com/share/17kmZSixW6/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.instagram.com/eng_shef0?igsh=Z2lwZTl6dnRwemhs&utm_source=qr"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
-
 </body>
 </html>
 
